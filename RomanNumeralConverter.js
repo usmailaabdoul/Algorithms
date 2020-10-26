@@ -47,7 +47,7 @@ const converToRoman = (num) => {
       return romanNums.join('');
     }
 
-    __closestNum = findClosesNum(_closestNum);
+    let __closestNum = findClosesNum(_closestNum);
     let romanNum = findRomanNum(library, __closestNum);
     romanNums.push(romanNum);
     _closestNum = _closestNum - __closestNum;
